@@ -10,3 +10,8 @@ Dependencies:
 * polybar
 * polybar-gmail
 * deadbeef
+* zsh
+* termite
+
+Fonts:
+* font-awesome
