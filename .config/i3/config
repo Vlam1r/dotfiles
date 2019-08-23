@@ -323,7 +323,7 @@ mode "$mode_gaps_left" {
 bindsym XF86MonBrightnessUp exec "light -A 5"
 bindsym XF86MonBrightnessDown exec "light -U 5" 
 
-exec_always feh --bg-scale $HOME/Pictures/wall.jpg
+exec_always feh --bg-scale $HOME/Pictures/wallpaper.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 bindsym Print exec scrot $HOME/Pictures/`date +%Y-%m-%d_%H:%M:%S`.png
@@ -331,7 +331,7 @@ bindsym Print exec scrot $HOME/Pictures/`date +%Y-%m-%d_%H:%M:%S`.png
 exec_always compton --blur-method kawase --blur-strength 20 -f
 
 bindsym $mod+x exec betterlockscreen -l blur
-exec_always --no-startup-id $HOME/Pictures/wall.jpg
+exec_always --no-startup-id $HOME/Pictures/wallpaper.jpg
 
 gaps outer 15
 gaps inner 15
