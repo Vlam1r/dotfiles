@@ -2,6 +2,8 @@
 
 Dependencies:
 * i3-gaps
+**xorg-server
+**xorg-init
 * compton-tryone
 * feh
 * rofi
