@@ -23,7 +23,7 @@ fc-match Termsynu:size=8:antialias=false
 fc-match FontAwesome:size=12
 
 modules-center = i3
-modules-right = volume backlight wireless-network  battery date powermenu
+modules-right = volume backlight wired-network wireless-network  battery date powermenu
 
 [bar/bottom]
 monitor = eDP-1
@@ -52,7 +52,7 @@ font-5 = Termsynu:size=8:antialias=false;0
 
 modules-left = gmail
 ;modules-center = 
-modules-right = wired-network cpu memory
+modules-right = cpu memory
 
 [module/gmail]
 
