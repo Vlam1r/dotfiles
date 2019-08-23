@@ -445,7 +445,7 @@ format = <label-state> <label-mode>
 ;   %mode%
 ; Default: %mode%
 label-mode = %mode%
-label-mode-padding = 2
+label-mode-padding = 3
 ;label-mode-background = #e60053
 
 ; Available tokens:
@@ -458,7 +458,7 @@ label-focused = %icon%
 ;label-focused-foreground = #C0C0C0
 label-focused-background = #3f3f3f
 ;label-focused-underline = #fba922
-label-focused-padding = 2
+label-focused-padding = 3
 
 ; Available tokens:
 ;   %name%
@@ -467,7 +467,7 @@ label-focused-padding = 2
 ;   %output%
 ; Default: %icon%  %name%
 label-unfocused = %icon%
-label-unfocused-padding = 2
+label-unfocused-padding = 3
 
 ; Available tokens:
 ;   %name%
@@ -477,7 +477,7 @@ label-unfocused-padding = 2
 ; Default: %icon%  %name%
 label-visible = %icon%
 ;label-visible-underline = #555555
-label-visible-padding = 2
+label-visible-padding = 3
 
 ; Available tokens:
 ;   %name%
@@ -488,9 +488,9 @@ label-visible-padding = 2
 label-urgent = %icon%
 label-urgent-foreground = #000000
 label-urgent-background = #bd2c40
-label-urgent-padding = 2
+label-urgent-padding = 3
 
 ; Separator in between workspaces
-label-separator = |
-label-separator-padding = 1
-label-separator-foreground = #ffffff
+;label-separator = |
+;label-separator-padding = 1
+;label-separator-foreground = #ffffff
