@@ -23,3 +23,4 @@ Fonts:
 * font-awesome
 * noto
 * material-icons
+* unifont
