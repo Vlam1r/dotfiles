@@ -8,10 +8,14 @@ Dependencies:
 * feh
 * rofi
 * polybar
-* polybar-gmail
+  * polybar-gmail
 * deadbeef
 * zsh
+  * oh-my-zsh
 * termite
+* vim
+  * vundle
 
 Fonts:
 * font-awesome
+
