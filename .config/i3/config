@@ -40,11 +40,6 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec dmenu_run
 bindsym $mod+d exec rofi -show run -lines 8 -eh 2 -width 100 -padding 400 -opacity "85" -bw 0 -bc "#261F3E" -bg "#261F3E" -fg "$text-color" -hlbg "#261F3E" -hlfg "#9575cd" -font "System San Francisco Display 12"
 
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -172,13 +167,13 @@ exec_always --no-startup-id exec i3-workspace-names
 
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo toggle # mute sound
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo +5% #increase sound volume
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo -5% #decrease sound volume
+#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo toggle # mute sound
 
 # Sreen brightness controls
-#bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-#bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 # decrease screen brightness
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause
@@ -186,9 +181,9 @@ bindsym XF86AudioPause exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-#bindsym XF86AudioMute exec amixer sset 'Master' toggle
-#bindsym XF86AudioLowerVolume exec amixer sset 'Master' 5%-
-#bindsym XF86AudioRaiseVolume exec amixer sset 'Master' 5%+
+bindsym XF86AudioMute exec amixer sset 'Master' toggle
+bindsym XF86AudioLowerVolume exec amixer sset 'Master' 5%-
+bindsym XF86AudioRaiseVolume exec amixer sset 'Master' 5%+
 
 
 
@@ -320,15 +315,15 @@ mode "$mode_gaps_left" {
 
 
 
-bindsym XF86MonBrightnessUp exec "light -A 5"
-bindsym XF86MonBrightnessDown exec "light -U 5" 
+#bindsym XF86MonBrightnessUp exec "light -A 5"
+#bindsym XF86MonBrightnessDown exec "light -U 5" 
 
 exec_always feh --bg-scale $HOME/Pictures/wallpaper.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 bindsym Print exec scrot $HOME/Pictures/`date +%Y-%m-%d_%H:%M:%S`.png
 
-exec_always compton --blur-method kawase --blur-strength 20 -f
+exec_always --no-startup-id compton
 
 bindsym $mod+x exec betterlockscreen -l blur
 exec_always --no-startup-id $HOME/Pictures/wallpaper.jpg

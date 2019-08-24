@@ -23,7 +23,7 @@ fc-match Termsynu:size=8:antialias=false
 fc-match FontAwesome:size=12
 
 modules-center = i3
-modules-right = volume backlight wired-network wireless-network  battery date powermenu
+modules-right = volume backlight wired-network wireless-network  battery date ;powermenu
 
 [bar/bottom]
 monitor = eDP-1
@@ -65,9 +65,9 @@ format-padding = 2
 
 [module/backlight]
 type = internal/backlight
-format = <ramp> <label <bar>
+format = <ramp> <label>
 label = %percentage% 
-
+card = amdgpu_bl0
 
 ;ramp-0 = 
 ;ramp-1 = 
@@ -92,7 +92,7 @@ ramp-4 = 🌑
 
 [module/battery]
 type = internal/battery
-full-at = 100
+full-at = 99 
 battery = BAT1
 adapter = ACAD
 
@@ -224,11 +224,6 @@ ramp-coreload-6-foreground = #ff5555
 ramp-coreload-7 = █
 ramp-coreload-7-font = 2
 ramp-coreload-7-foreground = #ff5555
-
-;[module/date]
-;type = internal/date
-;date =  %%{F#fff}%H:%M%%{F-}      %%{F#fff}%d-%m-%Y%%{F-}  
-;date-alt = %%{F#fff}%A, %d %B %Y  %%{F#fff}%H:%M%%{F#666}:%%{F#fba922}%S%%{F-}
 
 [module/date]
 type = internal/date
