@@ -4,6 +4,9 @@ Dependencies:
 * i3-gaps
   * xorg-server
   * xorg-init
+  * xbacklight-acpi
+  * alsa
+  * pulseaudio
 * compton-tryone
 * feh
 * rofi
@@ -18,4 +21,5 @@ Dependencies:
 
 Fonts:
 * font-awesome
-
+* noto
+* material-icons
